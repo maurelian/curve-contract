@@ -1,8 +1,30 @@
 {
-    "lp_contract": "CurveTokenV2",
+    "lp_contract": "CurveTokenV3",
+    "swap_address": "",
+    "lp_token_address": "",
+    "zap_address": "",
+    "gauge_addresses": [""],
+    "lp_constructor": {
+        "symbol": "eCRV",
+        "name": "Curve.fi ETH/sETH"
+    },
+    "swap_constructor": {
+        "_A": 200,
+        "_fee": 4000000,
+        "_admin_fee": 5000000000
+    },
     "coins": [
-        {"decimals": 18, "tethered": false, "eth": true},
-        {"decimals": 18, "tethered": false}
+        {
+            "name": "ETH",
+            "decimals": 18,
+            "tethered": false,
+            "eth": true
+        },
+        {
+            "name": "sETH",
+            "decimals": 18,
+            "underlying_address": "0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb"
+        }
     ],
     "testing": {
         "initial_amount": 10000
